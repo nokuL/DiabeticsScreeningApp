@@ -20,7 +20,8 @@ available at http://localhost:8088
 
 Run `mvn clean install` to build the project.
 
-## Run
+## Deployment
+(app could not be deployed online as there were no accessible free cloud service providers for Java and compatible libraries)
 
 
 
