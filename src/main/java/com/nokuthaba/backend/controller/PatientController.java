@@ -32,11 +32,7 @@ public class PatientController {
     public Patient recordPatient(@RequestBody Patient patient) throws URISyntaxException {
 
         Patient patientSaved = patientsService.recordPatient(patient);
-       /* Optional<Patient> syncedPatient = Optional.of(syncToServer(patient, false));
-        syncedPatient.ifPresent(s->{
-            patientSaved.setRecordSyncStatus(RecordSyncStatus.SYNCED);
-            patientsService.editPatient(patientSaved);
-        });*/
+
         return patientSaved;
     }
 
@@ -49,7 +45,6 @@ public class PatientController {
     @PutMapping("/update-patient")
     public Patient updatePatient(@RequestBody Patient patient) throws URISyntaxException {
         Patient savedPatient = patientsService.editPatient(patient);
-        patientsService.syncToServer(savedPatient, true);
         return  savedPatient;
     }
 
@@ -58,16 +53,7 @@ public class PatientController {
         patientsService.deleteById(id);
     }
 
-    public Patient syncToServer(Patient patient, boolean isUpdate) throws URISyntaxException {
-        URI uri;
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_JSON);
-        HttpEntity<Patient> httpEntity = new HttpEntity<>(patient, headers);
-        log.info(">>>>>>>>>>>>>>>>>>>> SYNC SERVER REACHED");
-        uri = isUpdate ?  new URI(REPORT_URI + "updatePatientReportRecord"): new URI(REPORT_URI + "savePatientReportRecord");
-        log.info("UR");
-        return restTemplate.postForObject(uri, httpEntity, Patient.class);
-    }
+
 
 
 }
