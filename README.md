@@ -1,6 +1,6 @@
 # DiabeticsScreeningApp# Diabetes Screening
 
-This is a Java springboot app designed to record patients, patient vitals and assist clinicians to make
+This is a Java Springboot app designed to record patients, and patient vitals and assist clinicians to make
 decisions based on the data recorded.
 It has been developed using the following tools:
 `framework - Spring Boot`
@@ -11,13 +11,15 @@ It has been developed using the following tools:
 `build tool - maven`
 `documentation-swagger`
 
-##API 
-To access the APIs through Swagger navigate to http://localhost:8088/swagger-ui.html
+
 
 ## Development server
 
-Open the app from a Java IDE of choice . Create a mysql database called `consultation ` and run the app, it will be
+Open the app from a Java IDE of choice. Create a MySQL database called `consultation ` and run the app, it will be
 available at http://localhost:8088
+
+##API 
+To access the APIs through Swagger navigate to http://localhost:8088/swagger-ui.html
 
 ## Build
 
