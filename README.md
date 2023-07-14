@@ -26,7 +26,7 @@ To access the APIs through Swagger navigate to http://localhost:8088/swagger-ui.
 Run `mvn clean install` to build the project.
 
 ## Deployment
-(app could not be deployed online as there were no accessible free cloud service providers for Java and compatible libraries)
+(app could not be deployed online as there were no accessible free cloud service providers for Java and compatible libraries for this project)
 
 
 
