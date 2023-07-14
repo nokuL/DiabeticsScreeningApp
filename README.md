@@ -16,7 +16,8 @@ It has been developed using the following tools:
 ## Development server
 
 Open the app from a Java IDE of choice. Create a MySQL database called `consultation ` and run the app, it will be
-available at http://localhost:8088
+available at http://localhost:8088. Use the following credentials to login : `username- admin123`
+`password- admin@pass`
 
 ##API 
 To access the APIs through Swagger navigate to http://localhost:8088/swagger-ui.html
