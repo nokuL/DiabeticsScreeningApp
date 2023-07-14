@@ -3,13 +3,13 @@
 This is a Java springboot app designed to record patients, patient vitals and assist clinicians to make
 decisions based on the data recorded.
 It has been developed using the following tools:
-framework - Spring Boot
-language - Java 8
-database - Mysql
-ORM - JPA
-testing framework - jUnit and Mockito
-build tool - maven
-swagger
+`framework - Spring Boot`
+`language - Java 8`
+`database - Mysql`
+`ORM - JPA`
+`testing framework - jUnit and Mockito`
+`build tool - maven`
+`documentation-swagger`
 
 ## Development server
 
